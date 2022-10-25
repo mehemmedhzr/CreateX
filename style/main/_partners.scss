@@ -1,0 +1,133 @@
+@import 'variable-mixin';
+
+
+.partners{
+    background: #F4F5F7;
+    padding-top: 5em;
+    padding-bottom: 121px;
+    color: $fontColor;
+    >div{
+        >header{
+            margin-bottom: 170px;
+            >h1{
+                font-weight: 700;
+                font-size: 46px;
+            }
+            >figure{
+                margin-top: 52px;
+                overflow-x: scroll;
+                overflow-x: hidden;
+            }
+        }
+        >footer{ 
+            position: relative;
+            >article{
+                margin-right: 1.5em;
+                >header{
+                    margin-bottom: 52px;
+                    >h1{
+                        font-weight: 700;
+                        font-size: 46px;
+                    }
+                }
+                .custom-car{
+                    max-width: 600px;
+                    >div{
+                        >div{
+                            >img{
+                                margin-bottom: 24px;
+                            }
+                            .main-p{
+                                color: #424551;
+                                font-size: 16px;
+                            }
+                            .secondary-p{
+                                color: #787A80;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .partner-car-buttons{
+                        >button{
+                            opacity: 1;
+                        }
+                        .custom-btn-prev{
+                        right: 50px;
+                        top: auto;
+                        left: auto;
+                        }
+                        .custom-btn-next{
+                         top: auto;   
+                        }
+                    }
+                }
+            }
+            >aside{
+                margin-left: 1.5em;
+                position: absolute;
+                right: 0;
+                >img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){ 
+    .partners{
+        >div{
+            >footer{
+                >aside{
+                    width: 350;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .partners{
+        >div{
+            >footer{
+                >article{
+                    width: 60%;
+                }
+                >aside{
+                    width: 290;
+                }
+            }
+        }
+    }
+ }
+
+@media screen and (min-width:576px) and (max-width:768px){
+    .partners{
+        >div{
+            >footer{
+                flex-direction: column-reverse;
+                >aside{
+                    position: static;
+                    margin-bottom: 1.5em;
+                }
+            }
+        }
+    }
+ }
+
+@media screen and (max-width:576px){
+    .partners{
+        >div{
+            >header{
+                margin-bottom: 60px;
+            }
+            >footer{
+                flex-direction: column-reverse;
+                >aside{
+                    position: static;
+                    margin-bottom: 1.5em;
+                }
+            }
+        }
+    }
+ }

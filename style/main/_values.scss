@@ -1,0 +1,73 @@
+@import 'variable-mixin';
+ 
+
+main{
+    .our_core_values{
+        margin-top: 10em;
+        color: $fontColor;
+        >header{
+            >h1{
+                font-weight: 700;
+            }
+        }
+        >figure{
+            margin-top: 60px;
+            .row{
+                >.col-4{
+                    height: 100%;
+                    b{
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: #1E212C;
+                        display: block;
+                    }
+                    p{
+                        color: #787A80;
+                    }
+                }
+                .value_content{
+                    padding: 0 94 0 12;
+                }
+                .value_content2{
+                    padding: 0 94 0 94;
+                }
+                .value_content3{
+                    padding: 0 12 0 94;
+                }
+            }
+        }
+    }
+ }
+
+@media screen and (max-width:768px){
+    main{
+        .our_core_values{
+            margin-top: 5em;
+            >figure{
+                .row{
+                    .value_content{
+                        padding: 0;
+                        margin-bottom: 3em;
+                        >p{
+                            padding: 0 5em;
+                        }
+                    }
+                    .value_content2{
+                        padding: 0;
+                        margin-bottom: 3em;
+                        >p{
+                            padding: 0 5em;
+                        }
+                    }
+                    .value_content3{
+                        padding: 0;
+                        margin-bottom: 3em;
+                        >p{
+                            padding: 0 5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

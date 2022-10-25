@@ -1,0 +1,25 @@
+@import 'nav/navbar';
+@import 'nav/variable-mixin';
+@import 'main/variable-mixin';
+@import 'main/carousel';
+@import 'main/play-video';
+@import 'main/values';
+@import 'main/services';
+@import 'main/selected_projects';
+@import 'main/partners';
+@import 'main/fact-and-news';
+@import 'footer/footer';
+@import 'footer/variable-mixin';
+@import 'main/service-main';
+@import 'main/service-v1-main';
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.containern {
+    max-width: 1200px;
+    margin: 0 auto;
+}

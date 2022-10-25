@@ -1,0 +1,269 @@
+@import 'variable-mixin';
+
+
+.selected_projects{
+    padding: 120px 0;
+    >div{   
+        color: $fontColor; 
+        >header{
+            >h1{
+                font-weight: 700;
+                max-width: 59%;
+                font-size: 46px;
+                color: $fontColor;
+            }
+        }
+        >.project-dtls{
+            margin: 60px 0 80px 0;
+            .project-btn-form{
+                right: 0; 
+                top: -96px;
+                >button{
+                    background-color: transparent;
+                    border: none;
+                    padding: 12px 12px;
+                    >svg{
+                        >path{
+                            fill: #424551;
+                        }
+                    }
+                }
+                >button:hover{
+                    background-color: #FF5A30;
+                    border-radius: 50%;
+                    >svg{
+                        >path{
+                            fill: #FFFFFF;
+                        }
+                    }
+                }
+             }
+            >div{
+                >div{
+                    >div{
+                        padding-bottom: 24px;
+                        border-radius: 4px;
+                        
+                        .img_div{
+                            transition: all .2s ease-in-out;
+                            height: 271.61px;
+                            >img{
+                                width: 100%;
+                                border-radius: 4px;
+                                height: 100%;
+                            }
+                        }
+                        >h5{
+                            font-size: 20px;
+                            font-weight: 700;
+                            color: $fontColor;
+                        }
+                        >p{
+                            color: #787A80;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        >form{
+                            display: none;
+                            >button{
+                                background-color: transparent;
+                                border-radius: 4px;
+                                border: 1px solid #FF5A30;
+                                padding: .5em 2em;
+                                color: #FF5A30;
+                                font-weight: 700;
+                                font-size: 14px;
+                                letter-spacing: 0.5px;
+                                transition: all .4ms ease;
+                            }
+                        }
+                    }
+                    >div:hover{
+                        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05) !important;
+                        cursor: pointer;
+                        .img_div{
+                            height: 215.61px;
+                            >img{
+                                height: 100%;
+                            }
+                        }
+                        >form{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        >footer{
+            >h3{
+                font-weight: 700;
+                font-size: 28px;
+                margin-right: 20px;
+            }
+            >form{
+                >button{
+                    margin-left: 20px;
+                    color: #FFFFFF;
+                    background-color: #FF5A30;
+                    border-radius: 4px;
+                    font-weight: 700;
+                    letter-spacing: 0.5px;
+                    border: none;
+                    padding: .5em 40px;
+                    font-size: 1em;
+                }
+                >button:hover{
+                    background-color: #FFFFFF;  
+                    color: #FF5A30;
+                    border: 1px solid #FF5A30;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    .selected_projects{
+        >div{
+            >header{
+                >h1{
+                    font-size: 2.5em;
+                }
+            }
+            .project-dtls{
+                >div{
+                    >div{
+                        >div:hover{
+                            .img_div{
+                                height: 210.266px;
+                                >img{
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .selected_projects{
+        >div{
+            >header{
+                >h1{
+                    font-size: 1.8em;
+                }
+            }
+            .project-dtls{
+                >div{
+                    >div{
+                        >div:hover{
+                            .img_div{
+                                height: 144.219px;
+                                >img{
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+@media screen and (min-width:576px) and (max-width:768px){
+    .selected_projects{
+        >div{
+            >header{
+                >h1{
+                    font-size: 1.8em;
+                    max-width: 100%;
+                }
+            }
+            .project-dtls{
+                >div{
+                    >div{
+                        >div:hover{
+                            .img_div{
+                                height: 107.609px;
+                                >img{
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        >div{
+                            padding-bottom: 1em;
+                            >h5, >p, >form>button{
+                                font-size: 14px;
+                            }
+                            >h5{
+                                margin-top: .5em !important;
+                            }
+                            >p{
+                                margin-bottom: 4px;
+                            }
+                            >form{
+                                margin-bottom: 0;
+                                >button{
+                                    width: 70%;
+                                    font-weight: 600;
+                                    font-size: 12px;
+                                    margin-top: 0 !important;
+                                    line-height: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+@media screen and (max-width:576px){
+    .selected_projects{
+        padding: 60px 0;
+        >div{
+            >header{
+                >h1{
+                    font-size: 2em;
+                    text-align: center;
+                    max-width: 100%;
+                }
+            }
+            .project-dtls{
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                margin-bottom: 40px;
+                .project-btn-form{
+                    left: 0;
+                    top: 0px;
+                    position: relative !important;
+                    }
+                >div{
+                    >div{
+                        >div{
+                            margin-bottom: 1em;
+                        }   
+                    }
+                }
+            }
+            >footer{
+                flex-direction: column;
+                >h3{
+                    margin-right: 0;
+                    margin-bottom: 1em !important;
+                }
+                >form{
+                    >button{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+ }

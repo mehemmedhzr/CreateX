@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+    </style>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="service-header service-v1-header">
+        <nav class="container">
+            <div class="hamburgerandlogo">
+                <a href="index.html"><img src="image/logo.png" class="booknetic-logo" alt=""></a>
+                <form action="" class="form-menu">
+                    <button><img src="image/menu.svg" alt=""></button>
+                </form>
+            </div>
+            <a href=""><img src="image/logo.png" alt=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li class="link-margin"><a href="index.html">About Us</a></li>
+                    <li class="link-margin"><a href="">Services</a></li>
+                    <li class="link-margin"><a href="">Work</a></li>
+                    <li class="link-margin"><a href="">News</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="nav-communication">
+                <div class="com-phone">
+                    <img src="image/navbar-iphone.png" alt="">
+                    <article>
+                        <p>Call us</p>
+                        <p>(405) 555-0128</p>
+                    </article>
+                </div>
+                <div class="com-mail">
+                    <img src="image/navbar-chat.png" alt="">
+                    <article>
+                        <p>Talk to us</p>
+                        <p>hello@createx.com</p>
+                    </article>
+                </div>
+            </div>
+        </nav>
+        <article>
+            <div class="container">
+                <div class="br-crumbs">
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+                          <li class="breadcrumb-item"><a href="index-service.html">Services</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Construction</li>
+                        </ol>
+                      </nav>    
+                </div>
+                <div>
+                    <h1 class="mb-4">CONSTRUCTION SERVICE</h1>
+                </div>
+                <div>
+                    <p>Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet aenean vulputate elementum blandit amet.</p>
+                </div>
+            </div>
+        </article>
+    </header>
+
+    <main class="service-v1-main">
+        <section class="sectors">
+            <div class="container sector-inside">
+                <header>
+                    <h1 class="text-center">Sectors we work in</h1>
+                </header>
+                <div class="access">
+                    <ul>
+                        <li><a href="">Apartments & Flats</a></li>
+                        <li><a href="">Private Houses</a></li>
+                        <li><a href="">Stores & Malls</a></li>
+                        <li><a href="">Warehouses</a></li>
+                        <li><a href="">Industrial Facilities</a></li>
+                        <li><a href="">Business Centers</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <img src="image/v1-sector-content.png" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="sector-card">
+                    <header>
+                        <img src="image/content-card-braces.svg" alt="">
+                        <h3>We know a thing or two about the process of building your dream home.</h3>
+                    </header>
+                    <div>
+                        <img src="image/content-card-ca.png" alt="">
+                        <article>
+                            <b>Courtney Alexander</b>
+                            <p>CEO - Createx Construction Bureau</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

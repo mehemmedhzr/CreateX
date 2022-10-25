@@ -1,0 +1,122 @@
+@import 'variable-mixin';
+
+main{
+    >.play-video-con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7em;
+        header{
+            text-align: center;
+            margin-bottom: 4em;
+            h1{
+                margin-bottom: 1.5rem;
+                font-weight: 700;
+                font-size: 2.8em;
+            }
+        }
+        >section{
+            background-image: url(../image/video-image.png);
+            width: 1200px;
+            height: 500px;
+            position: relative;
+            >:first-child{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                width: fit-content;
+                height: fit-content;
+                >button{
+                    background-color: transparent;
+                    border: none;
+                }
+                >button:hover{
+                    cursor: pointer;
+                }
+            }
+            >:last-child{
+                position: absolute;
+                bottom: 1em;
+                left: 1em;
+                margin-bottom: 0;
+                >:last-child{
+                    background-color: transparent;
+                    border: none;
+                }
+                >button:hover{
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    .container{
+        max-width: 992px !important;
+    }
+    main{
+        >:first-child{
+            >section{
+                width: 992px;
+                background-size: cover; 
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .container{
+        max-width: 768px !important;
+    }
+    main{
+        >:first-child{
+            >section{
+                width: 768px;
+                height: 400px;
+                background-size: cover;
+            }
+        }
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px){
+    .container{
+        max-width: 576px !important;
+    }
+    main{
+        >:first-child{
+            >header{
+                h1{
+                    font-size: 1.8em;
+                }
+            }
+            >section{
+                width: 576px;
+                height: 400px;
+                background-size: cover;
+            }
+        }
+    }
+}
+@media screen and (max-width:576px){
+    .container{
+        max-width: 90% !important;
+    }
+    main{
+        >:first-child{
+            >header{
+                h1{
+                    font-size: 1.6em;
+                }
+            }
+            >section{
+                width: 350px;
+                height: 200px;
+                background-size: cover;
+            }
+        }
+    }
+}
